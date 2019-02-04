@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kenya County Codes Select2 Template</title>
+    <!-- jquery -->
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <!-- bootstrap -->
+    <link
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+      rel="stylesheet"
+    />
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- select2 -->
+    <link href="./node_modules/select2/dist/css/select2.css" rel="stylesheet" />
+    <script src="./node_modules/select2/dist/js/select2.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">
+              Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+      <div class="table-responsive">
+        <table class="table">
+          <caption>
+            Kenya County Codes
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Code</th>
+              <th scope="col">County</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>001</td>
+              <td>Nairobi</td>
+            </tr>
+          </tbody>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Code</th>
+            <th scope="col">County</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <select class="js-example-basic-single" name="state">
+      <option value="AL">Alabama</option>
+      ...
+      <option value="WY">Wyoming</option>
+    </select>
+    <script>
+      // Initialize Select2
+      $(document).ready(function() {
+        $(".js-example-basic-single").select2();
+      });
+    </script>
+  </body>
+</html>
